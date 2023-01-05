@@ -19,6 +19,51 @@ namespace xmlSettingFile
             public string Text { get; set; }
         }
 
+        // This is the class that will be deserialized.
+        public class OrderedItem
+        {
+            [XmlElement(Namespace = "http://www.cpandl.com")]
+            public string ItemName;
+            [XmlElement(Namespace = "http://www.cpandl.com")]
+            public string Description;
+            [XmlElement(Namespace = "http://www.cohowinery.com")]
+            public decimal UnitPrice;
+            [XmlElement(Namespace = "http://www.cpandl.com")]
+            public int Quantity;
+            [XmlElement(Namespace = "http://www.cohowinery.com")]
+            public decimal LineTotal;
+            // A custom method used to calculate price per item.
+            public void Calculate()
+            {
+                LineTotal = UnitPrice * Quantity;
+            }
+        }
+
+        private void DeserializeObject(string filename)
+        {
+            Debug.WriteLine("Reading with Stream");
+            // Create an instance of the XmlSerializer.
+            XmlSerializer serializer =
+            new XmlSerializer(typeof(OrderedItem));
+
+            // Declare an object variable of the type to be deserialized.
+            OrderedItem i;
+
+            using (Stream reader = new FileStream(filename, FileMode.Open))
+            {
+                // Call the Deserialize method to restore the object's state.
+                i = (OrderedItem)serializer.Deserialize(reader);
+            }
+
+            // Write out the properties of the object.
+            Debug.Write(
+            i.ItemName + "\t" +
+            i.Description + "\t" +
+            i.UnitPrice + "\t" +
+            i.Quantity + "\t" +
+            i.LineTotal);
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             // シリアライズ先のファイル
@@ -48,12 +93,16 @@ namespace xmlSettingFile
                 result = (Sample)xmlSerializer2.Deserialize(xmlReader); // （3）
             }
             label1.Text = result.Text;
+            Debug.WriteLine($"{result.Id}, {result.Text}");
 
-        }
+;        }
+
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-
+            Debug.WriteLine("============hello=========\n");
+            const string xmlFile = @".\test.xml";
+            DeserializeObject(xmlFile);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
