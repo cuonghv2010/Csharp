@@ -1,0 +1,17 @@
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\bin\Debug\net6.0-windows\xmlSettingFile.exe
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\bin\Debug\net6.0-windows\xmlSettingFile.deps.json
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\bin\Debug\net6.0-windows\xmlSettingFile.runtimeconfig.json
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\bin\Debug\net6.0-windows\xmlSettingFile.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\bin\Debug\net6.0-windows\xmlSettingFile.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.csproj.AssemblyReference.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.Form1.resources
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.csproj.GenerateResource.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.AssemblyInfoInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.AssemblyInfo.cs
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.csproj.CoreCompileInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\refint\xmlSettingFile.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\xmlSettingFile.genruntimeconfig.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\xmlSettingFile\xmlSettingFile\xmlSettingFile\obj\Debug\net6.0-windows\ref\xmlSettingFile.dll
