@@ -3,6 +3,7 @@ using System.Text;
 using System.Xml.Serialization;
 using System;
 using System.Diagnostics;
+using static System.Net.WebRequestMethods;
 
 namespace xmlSettingFile
 {
@@ -12,102 +13,90 @@ namespace xmlSettingFile
         {
             InitializeComponent();
         }
-
-        public class Sample
-        {
-            public int Id { get; set; }
-            public string Text { get; set; }
-        }
-
-        // This is the class that will be deserialized.
-        public class OrderedItem
-        {
-            [XmlElement(Namespace = "http://www.cpandl.com")]
-            public string ItemName;
-            [XmlElement(Namespace = "http://www.cpandl.com")]
-            public string Description;
-            [XmlElement(Namespace = "http://www.cohowinery.com")]
-            public decimal UnitPrice;
-            [XmlElement(Namespace = "http://www.cpandl.com")]
-            public int Quantity;
-            [XmlElement(Namespace = "http://www.cohowinery.com")]
-            public decimal LineTotal;
-            // A custom method used to calculate price per item.
-            public void Calculate()
-            {
-                LineTotal = UnitPrice * Quantity;
-            }
-        }
-
-        private void DeserializeObject(string filename)
-        {
-            Debug.WriteLine("Reading with Stream");
-            // Create an instance of the XmlSerializer.
-            XmlSerializer serializer =
-            new XmlSerializer(typeof(OrderedItem));
-
-            // Declare an object variable of the type to be deserialized.
-            OrderedItem i;
-
-            using (Stream reader = new FileStream(filename, FileMode.Open))
-            {
-                // Call the Deserialize method to restore the object's state.
-                i = (OrderedItem)serializer.Deserialize(reader);
-            }
-
-            // Write out the properties of the object.
-            Debug.Write(
-            i.ItemName + "\t" +
-            i.Description + "\t" +
-            i.UnitPrice + "\t" +
-            i.Quantity + "\t" +
-            i.LineTotal);
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            // シリアライズ先のファイル
-            const string xmlFile = @".\Sample.xml";
-            // シリアライズするオブジェクト
-            var obj = new Sample { Id = 7, Text = "＠IT" }; // （1）
+            Debug.WriteLine("============Load setting data=========\n");
+            loadDataFromXmlSettingFile(FileFullPath);
+            showSettingElements();
+        }
 
-            // シリアライズする
-            var xmlSerializer1 = new XmlSerializer(typeof(Sample));
-            using (var streamWriter = new StreamWriter(xmlFile, false, Encoding.UTF8))
+        [XmlRootAttribute("GenericSettings")]
+        public class GenericSettingsData
+        {
+            [XmlElement("Element1")] public string Element1;
+            [XmlElement("Element2")] public string Element2;
+            [XmlElement("Element3")] public string Element3;
+
+        }
+
+        private string FileFullPath = @".\setting.xml"; 
+        public GenericSettingsData GSD = null;
+
+        private void loadDataFromXmlSettingFile(string FileFullPath)
+        {
+            Debug.WriteLine("Reading with Stream");
+
+            FileStream fs = null;
+
+            // Create an instance of the XmlSerializer.
+            XmlSerializer serializer = new XmlSerializer(typeof(GenericSettingsData));
+            // Su dung using: https://xuanthulab.net/stream-trong-c-lam-viec-voi-filestream-lap-trinh-c-sharp.html
+            // https://xuanthulab.net/su-dung-giao-dien-idisposable-va-tu-khoa-using-trong-c-sharp.html
+            // 
+            using (fs = new FileStream(FileFullPath, FileMode.Open))
             {
-                xmlSerializer1.Serialize(streamWriter, obj);
-                streamWriter.Flush();
+                // Call the Deserialize method to restore the object's state.
+                GSD = (GenericSettingsData)serializer.Deserialize(fs);
             }
+            /*
+            Debug.Write(
+            GSD.Element1 + "\t" +
+            GSD.Element2 + "\t" +
+            GSD.Element3);
+            */
+        }
+        private void SaveDataToXmlSettingFile(string FileFullPath)
+        {
+            Debug.WriteLine("Save with Stream");
 
-            // デシリアライズする
-            var xmlSerializer2 = new XmlSerializer(typeof(Sample));
-            Sample result;
-            var xmlSettings = new System.Xml.XmlReaderSettings()
+            FileStream fs = null;
+
+            // Create an instance of the XmlSerializer.
+            XmlSerializer serializer = new XmlSerializer(typeof(GenericSettingsData));
+            // Su dung using: https://xuanthulab.net/stream-trong-c-lam-viec-voi-filestream-lap-trinh-c-sharp.html
+            // https://xuanthulab.net/su-dung-giao-dien-idisposable-va-tu-khoa-using-trong-c-sharp.html
+            // 
+            using (fs = new FileStream(FileFullPath, FileMode.Create))
             {
-                CheckCharacters = false, // （2）
-            };
-            using (var streamReader = new StreamReader(xmlFile, Encoding.UTF8))
-            using (var xmlReader
-                    = System.Xml.XmlReader.Create(streamReader, xmlSettings))
-            {
-                result = (Sample)xmlSerializer2.Deserialize(xmlReader); // （3）
+                serializer.Serialize(fs,GSD);
             }
-            label1.Text = result.Text;
-            Debug.WriteLine($"{result.Id}, {result.Text}");
-
-;        }
-
+        }
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            Debug.WriteLine("============hello=========\n");
-            const string xmlFile = @".\test.xml";
-            DeserializeObject(xmlFile);
+            Debug.WriteLine("============Load setting data=========\n");
+            loadDataFromXmlSettingFile(FileFullPath);
+            showSettingElements();
+        }
+
+        private void showSettingElements()
+        {
+            tbxElement1.Text = GSD.Element1;
+            tbxElement2.Text = GSD.Element2;
+            tbxElement3.Text = GSD.Element3;
+        }
+        private void updateSettingElements()
+        {
+            GSD.Element1 = tbxElement1.Text;
+            GSD.Element2 = tbxElement2.Text;           
+            GSD.Element3 = tbxElement3.Text;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            Debug.WriteLine("============Save setting data=========\n");
+            updateSettingElements();
+            SaveDataToXmlSettingFile(FileFullPath);
         }
     }
 }
