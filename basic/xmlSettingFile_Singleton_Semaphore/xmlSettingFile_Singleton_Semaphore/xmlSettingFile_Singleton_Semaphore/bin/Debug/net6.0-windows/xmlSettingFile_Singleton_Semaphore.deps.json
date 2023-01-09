@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "xmlSettingFile_Singleton_Semaphore/1.0.0": {
+        "runtime": {
+          "xmlSettingFile_Singleton_Semaphore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "xmlSettingFile_Singleton_Semaphore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

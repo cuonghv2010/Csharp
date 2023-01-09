@@ -4,6 +4,7 @@ using System.Xml.Serialization;
 using System;
 using System.Diagnostics;
 using static System.Net.WebRequestMethods;
+using System.Xml.Linq;
 
 namespace xmlSettingFile_Singleton_Semaphore
 {
@@ -57,48 +58,56 @@ namespace xmlSettingFile_Singleton_Semaphore
 
             public const string SettingsFileDefaultName = @".\setting.xml";
             private string SettingFileFullPath = string.Empty;
+            private SemaphoreSlim FileControlSem = new SemaphoreSlim(1);
 
             public GenericSettingsData GSD = null;
 
-            private void loadDataFromxmlSettingFile(string FileFullPath)
+            private bool loadDataFromxmlSettingFile(string FileFullPath)
             {
                 Debug.WriteLine("Reading with Stream");
-
+                bool bRet = true;
                 FileStream fs = null;
-
-                // Create an instance of the XmlSerializer.
-                XmlSerializer serializer = new XmlSerializer(typeof(GenericSettingsData));
-                // Su dung using: https://xuanthulab.net/stream-trong-c-lam-viec-voi-filestream-lap-trinh-c-sharp.html
-                // https://xuanthulab.net/su-dung-giao-dien-idisposable-va-tu-khoa-using-trong-c-sharp.html
-                // 
-                using (fs = new FileStream(FileFullPath, FileMode.Open))
+                try
                 {
-                    // Call the Deserialize method to restore the object's state.
-                    GSD = (GenericSettingsData)serializer.Deserialize(fs);
+                    FileControlSem.Wait();
+                    // Create an instance of the XmlSerializer.
+                    XmlSerializer serializer = new XmlSerializer(typeof(GenericSettingsData));
+                    // Su dung using: https://xuanthulab.net/stream-trong-c-lam-viec-voi-filestream-lap-trinh-c-sharp.html
+                    // https://xuanthulab.net/su-dung-giao-dien-idisposable-va-tu-khoa-using-trong-c-sharp.html
+                    // 
+                    using (fs = new FileStream(FileFullPath, FileMode.Open))
+                    {
+                        // Call the Deserialize method to restore the object's state.
+                        GSD = (GenericSettingsData)serializer.Deserialize(fs);
+                    }
                 }
-                /*
-                Debug.Write(
-                GSD.Element1 + "\t" +
-                GSD.Element2 + "\t" +
-                GSD.Element3);
-                */
+                catch (Exception) { bRet = false; }
+                finally { FileControlSem.Release(); }
+                return bRet;
             }
-            private void SaveDataToxmlSettingFile(string FileFullPath)
+            private bool SaveDataToxmlSettingFile(string FileFullPath)
             {
                 Debug.WriteLine("Save with Stream");
-
+                bool bRet = true;
                 FileStream fs = null;
-
-                // Create an instance of the XmlSerializer.
-                XmlSerializer serializer = new XmlSerializer(typeof(GenericSettingsData));
-                // Su dung using: https://xuanthulab.net/stream-trong-c-lam-viec-voi-filestream-lap-trinh-c-sharp.html
-                // https://xuanthulab.net/su-dung-giao-dien-idisposable-va-tu-khoa-using-trong-c-sharp.html
-                // 
-                using (fs = new FileStream(FileFullPath, FileMode.Create))
+                try
                 {
-                    serializer.Serialize(fs, GSD);
+                    FileControlSem.Wait();
+                    // Create an instance of the XmlSerializer.
+                    XmlSerializer serializer = new XmlSerializer(typeof(GenericSettingsData));
+                    // Su dung using: https://xuanthulab.net/stream-trong-c-lam-viec-voi-filestream-lap-trinh-c-sharp.html
+                    // https://xuanthulab.net/su-dung-giao-dien-idisposable-va-tu-khoa-using-trong-c-sharp.html
+                    // 
+                    using (fs = new FileStream(FileFullPath, FileMode.Create))
+                    {
+                        serializer.Serialize(fs, GSD);
+                    }
                 }
+                catch (Exception) { bRet = false; }
+                finally { FileControlSem.Release(); }
+                return bRet;
             }
+
             public void SetSettingFileFullPath(string path) { SettingFileFullPath = path; }
 
             public void SaveDataToXml()
