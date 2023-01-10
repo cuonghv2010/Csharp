@@ -1,0 +1,15 @@
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\bin\Debug\net6.0\delegate_basic.exe
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\bin\Debug\net6.0\delegate_basic.deps.json
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\bin\Debug\net6.0\delegate_basic.runtimeconfig.json
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\bin\Debug\net6.0\delegate_basic.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\bin\Debug\net6.0\delegate_basic.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\delegate_basic.csproj.AssemblyReference.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\delegate_basic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\delegate_basic.AssemblyInfoInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\delegate_basic.AssemblyInfo.cs
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\delegate_basic.csproj.CoreCompileInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\delegate_basic.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\refint\delegate_basic.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\delegate_basic.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\delegate_basic.genruntimeconfig.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_basic\delegate_basic\obj\Debug\net6.0\ref\delegate_basic.dll
