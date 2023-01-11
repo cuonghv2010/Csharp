@@ -1,0 +1,17 @@
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\bin\Debug\net6.0-windows\csv_basic.exe
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\bin\Debug\net6.0-windows\csv_basic.deps.json
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\bin\Debug\net6.0-windows\csv_basic.runtimeconfig.json
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\bin\Debug\net6.0-windows\csv_basic.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\bin\Debug\net6.0-windows\csv_basic.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.csproj.AssemblyReference.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.Form1.resources
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.csproj.GenerateResource.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.AssemblyInfoInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.AssemblyInfo.cs
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.csproj.CoreCompileInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\refint\csv_basic.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\csv_basic.genruntimeconfig.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\csv_basic\csv_basic\obj\Debug\net6.0-windows\ref\csv_basic.dll
