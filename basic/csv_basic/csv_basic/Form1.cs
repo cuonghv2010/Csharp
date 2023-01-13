@@ -3,6 +3,7 @@ using System.Text;
 using System.Xml.Serialization;
 using System;
 using System.Diagnostics;
+using System.Threading;
 
 namespace csv_basic
 {
@@ -12,23 +13,42 @@ namespace csv_basic
         {
             InitializeComponent();
         }
+        public string[] header =
+        {
+            "Time",
+            "Value1",
+            "Value2",
+            "Value3"
+        };
+
+        //public float[] data = { 1.0, 2.0, 3.0];
+        public int[] data = { 10, 20, 30 };
+   
 
         private void WriteFileCSV()
         {
             //ファイル名
             //var fileName = "sample.csv";
-            var fileName = @".\sample.csv"; //  絶対パスでも良い
-
+            var SavePathName = @".\logData.csv"; //  絶対パスでも良い
+            bool IsNeedToAddHeader = true;
+            if (File.Exists(SavePathName)) IsNeedToAddHeader = false;
             //書き込むテキスト
-            string data = "0,1,2,3,4,5";
+
             try
             {
                 //ファイルをオープンする
-                using (StreamWriter sw = new StreamWriter(fileName, true, Encoding.UTF8))
+                using (StreamWriter sw = new StreamWriter(SavePathName, true, Encoding.UTF8))
                 {
-   
-                  sw.WriteLine(data);
-                  sw.Flush(); // Dùng flush : https://www.tuyano.com/index3?id=1284003
+
+                    if (IsNeedToAddHeader)
+                    {
+                        string aHeaderLine = string.Join(",", header);
+                        sw.WriteLine(aHeaderLine);
+                    }
+                    string aDataLine = string.Join(",", data);
+                    aDataLine = DateTime.Now.ToString("yyyyMMdd") + "," + aDataLine;
+                    sw.WriteLine(aDataLine);
+                    sw.Flush(); // Dùng flush : https://www.tuyano.com/index3?id=1284003
 
                 }
             }
@@ -36,6 +56,7 @@ namespace csv_basic
             {
                 MessageBox.Show(ex.Message);
             }
+            MessageBox.Show("Save data to CSV done");
         }
 
         private void Form1_Load(object sender, EventArgs e)
