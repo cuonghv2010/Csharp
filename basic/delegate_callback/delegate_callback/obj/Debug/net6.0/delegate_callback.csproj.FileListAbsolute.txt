@@ -1,0 +1,15 @@
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\delegate_callback.csproj.AssemblyReference.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\delegate_callback.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\delegate_callback.AssemblyInfoInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\delegate_callback.AssemblyInfo.cs
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\delegate_callback.csproj.CoreCompileInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\bin\Debug\net6.0\delegate_callback.exe
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\bin\Debug\net6.0\delegate_callback.deps.json
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\bin\Debug\net6.0\delegate_callback.runtimeconfig.json
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\bin\Debug\net6.0\delegate_callback.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\bin\Debug\net6.0\delegate_callback.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\delegate_callback.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\refint\delegate_callback.dll
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\delegate_callback.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\delegate_callback.genruntimeconfig.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\delegate_callback\delegate_callback\obj\Debug\net6.0\ref\delegate_callback.dll
