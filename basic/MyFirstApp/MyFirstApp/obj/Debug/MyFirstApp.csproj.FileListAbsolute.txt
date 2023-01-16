@@ -1,0 +1,11 @@
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.exe.config
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.exe
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\bin\Debug\MyFirstApp.pdb
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.csproj.AssemblyReference.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.Form1.resources
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.Properties.Resources.resources
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.csproj.GenerateResource.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.csproj.CoreCompileInputs.cache
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.exe
+C:\Users\Cuonghv\source\repos\Csharp\basic\MyFirstApp\MyFirstApp\obj\Debug\MyFirstApp.pdb
