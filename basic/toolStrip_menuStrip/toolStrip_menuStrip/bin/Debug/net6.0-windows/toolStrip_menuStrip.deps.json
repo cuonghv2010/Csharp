@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "toolStrip_menuStrip/1.0.0": {
+        "runtime": {
+          "toolStrip_menuStrip.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "toolStrip_menuStrip/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
