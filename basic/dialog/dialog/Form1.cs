@@ -49,11 +49,36 @@ namespace dialog
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.openFileDialog1.Filter = "Image Files|*.jpg;*.png;*.BMP;*.ico| All files(*.*) | *.*";
             DialogResult result = this.openFileDialog1.ShowDialog();
-            string fileName = this.openFileDialog1.FileName;
-            this.pictureBox1.Image = Image.FromFile(fileName);
-            //pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.textBox2.Text = fileName;
+            string fileName = "";
+            fileName = this.openFileDialog1.FileName;
+            if (result == DialogResult.OK)
+            {
+                if (fileName == "")
+                {
+                    MessageBox.Show("Result: " + result.ToString(), "Empty path", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    this.textBox2.Text = fileName;
+                    if (fileName == "")
+                    {
+                        MessageBox.Show("Result: " + result.ToString(), "Empty path");
+                    }
+                    else
+                    {
+                        this.textBox2.Text = fileName;
+                        this.pictureBox1.Image = Image.FromFile(fileName);
+                        MessageBox.Show("Result:" + result.ToString(), "OK");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Result:" + result.ToString(), "Open failed");
+            }
+
         }
         
     }
