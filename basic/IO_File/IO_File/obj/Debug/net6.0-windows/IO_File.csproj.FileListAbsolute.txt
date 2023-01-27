@@ -1,0 +1,17 @@
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\bin\Debug\net6.0-windows\IO_File.exe
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\bin\Debug\net6.0-windows\IO_File.deps.json
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\bin\Debug\net6.0-windows\IO_File.runtimeconfig.json
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\bin\Debug\net6.0-windows\IO_File.dll
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\bin\Debug\net6.0-windows\IO_File.pdb
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.csproj.AssemblyReference.cache
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.Form1.resources
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.csproj.GenerateResource.cache
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.AssemblyInfoInputs.cache
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.AssemblyInfo.cs
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.csproj.CoreCompileInputs.cache
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.dll
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\refint\IO_File.dll
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.pdb
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\IO_File.genruntimeconfig.cache
+C:\Users\cuonghv\source\repos\C#\Csharp\basic\IO_File\IO_File\obj\Debug\net6.0-windows\ref\IO_File.dll
