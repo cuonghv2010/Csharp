@@ -14,7 +14,36 @@ namespace IO_File
             if(File.Exists(CALIBRATION_FILE))
             {
                 string content = File.ReadAllText(CALIBRATION_FILE);
-                this.textBox1.Text = content;
+                if(content != "")
+                {
+                    this.textBox1.Text = content;
+                }
+                else
+                {
+                    MessageBox.Show("File empty", "Information");
+                }
+            }
+            else
+            {
+                MessageBox.Show("File not found", "Information");
+                File.Create(CALIBRATION_FILE);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(CALIBRATION_FILE))
+            {
+                string content = this.textBox1.Text;
+                if (content != "")
+                {
+                    File.WriteAllText(CALIBRATION_FILE, content);
+                    MessageBox.Show("Saved to " + CALIBRATION_FILE, "Information");
+                }
+                else
+                {
+                    MessageBox.Show("Text empty", "Information");
+                }
             }
             else
             {
